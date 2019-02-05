@@ -1,0 +1,62 @@
+
+.ytVideo{
+  background: #000 url('../images/loader.gif') center no-repeat;
+  background-size: 40px 40px;
+}
+
+.ytVideo iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.ytLoader{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-size: cover!important;
+}
+
+.playBtn { 
+  top: calc(50% - 27px);
+  left: calc(50% - 40px);
+  background: #000;
+  border-radius: 50% / 10%;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 3em;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-indent: 0.1em;
+  transition: all 150ms ease-out;
+  width: 4em;
+  cursor: pointer;
+}
+
+.playBtn:hover {
+  background: red;
+}
+
+.playBtn::before { 
+  background: inherit;
+  border-radius: 5% / 50%;
+  bottom: 9%;
+  content: "";
+  left: -5%;
+  position: absolute;
+  right: -5%;
+  top: 9%;
+}
+
+.playBtn::after {
+  border-style: solid;
+  border-width: 1em 0 1em 1.732em;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+  content: ' ';
+  font-size: 0.75em;
+  height: 0;
+  margin: -1em 0 0 -0.75em;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
